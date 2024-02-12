@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css start -->
+    <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" href="./jquery/owl.carousel.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body >
+
+
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-sm  fixed-top nav_bg">
+
+        <div class="container-fluid d-flex">
+            <!-- Links brand-->
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./img/avada-logo-svg.svg" alt="" width="120"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links main link-->
+
+            <div>
+                <ul class="navbar-nav main_ul">
+                    <li class="nav-item main_li">
+                        <a class="nav-link main_link" href="#">Avada <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item main_li">
+                        <a class="nav-link  main_link" href="#"> Avada For <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item main_li">
+                        <a class="nav-link  main_link" href="#">Hosting<i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item main_li">
+                        <a class="nav-link  main_link" href="#">Customizition <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item main_li">
+                        <a class="nav-link  main_link" href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mobileShow" class="mobile_navbar">
+                <ul>
+                    <li onclick="navBarcross()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="">Avada</a></li>
+                    <li><a href="">Avada For</a></li>
+                    <li><a href="">Hosting</a></li>
+                    <li><a href="">Customizition</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="#"> <button type="button" class="btn ">Add Property</button></a></li>
+                </ul>
+            </div>
+            <!-- Links cart-->
+            <div>
+                <ul class="cart_ul">
+                    <li class="nav-item mobile_hide">
+                        <a class="nav-link  cart_link" href="#">
+                            <button type="button" class="btn  btn_nav"><i class="fa-regular fa-star"></i> My
+                                Avada</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mobile_nav" onclick="navBar()"></i>
+                        <a class="nav-link cart-ribbon cart_link" href="#"><i
+                                class="fa-solid fa-bars-staggered"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <!-- hero area laptop -->
+    <section id="hero_section" class="laptop">
+        <div class="container mt-5 pt-5">
+            <div class="row g-4 pt-3">
+                <div class="col-xl-5 col-md-7">
+                    <div class="hero_section_left">
+                        <!-- Element to contain animated typing -->
+                        <h1>The Ultimate <br> <span id="element"></span><br> Website Builder</h1>
+                        <p>Trusted by beginners, marketers & professionals; Built with usability and performance in
+                            mind.</p>
+                        <button type="button" class="btn hero_section_btn">Start Building <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                        <div class="hero_inner_block pt-5">
+                            <div class="hero_block_1">
+                                <h4>925k+</h4>
+                                <p>People Trust Avada</p>
+                            </div>
+                            <div class="hero_block_1">
+                                <h4>25k+</h4>
+                                <p>Average 5-Star Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-5">
+                    <div class=" hero_section_right"  data-aos="zoom-in"  >
+                        <div class="hero_img">
+                            <img src="./img/home-hero-x.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero area mobile -->
+    <section id="hero_section " class="mobile">
+        <div class="container mt-5 pt-5">
+            <div class="row g-4 pt-3">
+
+                <div class="col-xl-7 col-md-5">
+                    <div class=" hero_section_right"  data-aos="zoom-in">
+                        <div class="hero_img">
+                            <img src="./img/home-hero-x.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-7">
+                    <div class="hero_section_left">
+                        <!-- Element to contain animated typing -->
+                        <h1>The Ultimate <br> <span id="elementt"></span><br> Website Builder</h1>
+                        <p>Trusted by beginners, marketers & professionals; Built with usability and performance in
+                            mind.</p>
+                        <button type="button" class="btn hero_section_btn">Start Building <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                        <div class="hero_inner_block pt-5">
+                            <div class="hero_block_1">
+                                <h4>925k+</h4>
+                                <p>People Trust Avada</p>
+                            </div>
+                            <div class="hero_block_1">
+                                <h4>25k+</h4>
+                                <p>Average 5-Star Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project plan -->
+    <section id="project_plan">
+        <div class="container-fluid pb-5 mt-5 pt-5">
+            <div class="row g-4">
+                <div class="col-xl-4 col-md-4">
+                    <a href="#">
+                        <div class="project_plan_body "  data-aos="fade-up-right"  >
+                            <p>For Beginners</p>
+                            <h3>LaunchingYour First Website</h3>
+                            <div class="project_img">
+                                <img src="./img/web1.jpg" alt="">
+                            </div>
+                            <button type="btn" class=" btn btn_proje1">Visual Builder</button>
+                            <button type="btn" class=" btn btn_proje1">Documentation</button> <br>
+                            <button type="btn" class=" btn btn_proje1">Suport</button>
+                            <button type="btn" class=" btn btn_proje1">Prebuild Website</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="#">
+                        <div class=" project_plan_body2"  data-aos="zoom-in"   >
+                            <p>For Marketers</p>
+                            <h3>Generate Leads and Conversion</h3>
+                            <div class="project_img">
+                                <img src="./img/web2.jpg" alt="">
+                            </div>
+                            <button type="btn" class=" btn btn_proje2">Design</button>
+                            <button type="btn" class=" btn btn_proje2">SEO</button> <br>
+                            <button type="btn" class=" btn btn_proje2">Shop Builder</button>
+                            <button type="btn" class=" btn btn_proje2">Form Builder</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <a href="#">
+                        <div class=" project_plan_body3"  data-aos="fade-up">
+                            <p>For Professionals</p>
+                            <h3>Take Your Projects To The Next Level</h3>
+                            <div class="project_img">
+                                <img src="./img/web3.jpg" alt="">
+                            </div>
+                            <button type="btn" class=" btn btn_proje3">All-In-One</button>
+                            <button type="btn" class=" btn btn_proje3">Patcher</button> <br>
+                            <button type="btn" class=" btn btn_proje3">WCAG</button>
+                            <button type="btn" class=" btn btn_proje3">Dynamic Data</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Design Anything, Build Everything -->
+    <section id="design_everything">
+        <div class="container-fluid mt-5 pt-5">
+            <div class="desgin_heading">
+                <h1>Design Anything, Build Everything</h1>
+                <p>Design and launch your website fast & no coding knowledge is required.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-4 col-md-4">
+                    <div class="desgin_left">
+                        <div class="desgin_iiner_block">
+                            <button onclick="imgShown()" type="button" class="btn desgin_btn"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Live Visual Builder</button> <br>
+                            <button onclick="imgShown1()" type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Layout Builder</button> <br>
+                            <button onclick="imgShown2() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Header Builder</button> <br>
+                            <button onclick="imgShown3() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Mega Menu </button> <br>
+                            <button onclick="imgShown4() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Footer Builder</button> <br>
+                            <button onclick="imgShown5() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Form Builder</button> <br>
+                            <button onclick="imgShown6() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Off Canvas</button> <br>
+                            <button onclick="imgShown7() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i>
+                                Setup Wizard</button> <br>
+                            <button onclick="imgShown8() " type="button" class="btn desgin_btn mt-2"><i
+                                    class="fa-regular fa-life-ring"></i> Performance Wizard
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8   col-md-8">
+                    <div class="desgin_right">
+                        <div class="desgin_show">
+                            <img src="./img/live-visual.jpg" alt="" class="img-fluid" id="desgin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- All-In-One Website Builder -->
+    <section id="website_builder">
+        <div class="container-fluid pb-5 mt-5 pt-5">
+            <div class="websit_heading">
+                <h1>All-In-One Website Builder</h1>
+                <p>Experience total control over your website creation process.</p>
+            </div>
+            <div class="row pt-5 g-4">
+                <div class="col-xl-4 col-md-6">
+                    <div class="website_card_body" data-aos="fade-up-right" >
+                        <div class="web_card_img">
+                            <img src="./img/w1.jpg" alt="">
+                        </div>
+                        <h3>102 Prebuilt Websites</h3>
+                        <p>Prebuilt websites are designed to save you time. Import with a few clicks & customize it to
+                            suit your requirements.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class=" website_card_body" data-aos="fade-up">
+                        <div class="web_card_img">
+                            <img src="./img/w2.webp" alt="">
+                        </div>
+                        <h3>120+ Design Elements</h3>
+                        <p>Packed with options, they are highly flexible for any design & for any purpose. The only
+                            limit is your imagination.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class=" website_card_body" data-aos="zoom-in">
+                        <div class="web_card_img">
+                            <img src="./img/w3.jpg" alt="">
+                        </div>
+                        <h3>Built For Performance</h3>
+                        <p>Experience total control of your website’s features that will empower you to make superior
+                            performance-related decisions.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class=" website_card_body" data-aos="zoom-in">
+                        <div class="web_card_img">
+                            <img src="./img/w4.webp" alt="">
+                        </div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Avada is 100% fluid & responsive across all device types, from mobile to desktop & tablets,
+                            with no compromise.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class=" website_card_body"data-aos="zoom-in">
+                        <div class="web_card_img">
+                            <img src="./img/w5.webp" alt="">
+                        </div>
+                        <h3>Dynamic Content</h3>
+                        <p>Build unique pages & post layouts for your website by harnessing the power of Avada’s dynamic
+                            content functionality.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class=" website_card_body" data-aos="fade-up-right">
+                        <div class="web_card_img">
+                            <img src="./img/w6.jpg" alt="">
+                        </div>
+                        <h3>Online Store Builder</h3>
+                        <p>Avada is integrated with WooCommerce, allowing you to build successful online stores to sell
+                            anything online.</p>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="web_site_btn">
+                        <button type="button" class="btn website_custom_btn">Discover More
+                            <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="web_start "></div>
+    </section>
+    <!-- Trust Avada -->
+    <section id="trust_avada">
+        <div class="container-fluid pb-4 mt-5 pt-5">
+            <div class="trust_avada_heading">
+                
+                <h1>946,554 Website Owners <br>
+                    Trust Avada</h1>
+                <p>The #1 selling Website Builder on Themeforest for 11+ years.</p>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-xl-3 col-md-6">
+                    <div class="trust_card_body">
+                        <div class="trust_boy_img">
+                            <img src="./img/t1.webp" alt="">
+                        </div>
+                        <h4>World-Class Support</h4>
+                        <h5>We build long-term professional relationships with our customers that you can rely on &
+                            trust.</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="trust_card_body">
+                        <div class="trust_boy_img">
+                            <img src="./img/t2.webp" alt="">
+                        </div>
+                        <h4>Documentation & Tutorials</h4>
+                        <h5>Over 550 help files & 200 tutorial videos will make building websites with Avada even
+                            easier.</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="trust_card_body">
+                        <div class="trust_boy_img">
+                            <img src="./img/t3.webp" alt="">
+                        </div>
+                        <h4>100% Built In-House</h4>
+                        <h5>Avada is not reliant on 3rd party tools to deliver a reliable & stable website building
+                            experience.</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="trust_card_body">
+                        <div class="trust_boy_img">
+                            <img src="./img/t4.webp" alt="">
+                        </div>
+                        <h4>Free Lifetime Updates</h4>
+                        <h5>Your website will receive free & regular updates, compatible with industry standards &
+                            trends, for life.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials office -->
+    <section id="testimonials">
+        <div class="container-fluid pb-5 mt-5">
+            <div class="row g-4">
+                <div class="col-xl-6 col-md-6">
+                    <div class="testimonials_left">
+                        <img src="./img/o1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="testimonials_right">
+                        <h3>“We choose to specialise in Avada because it is both functional and practical, and our
+                            clients simply love it! It has stood the test of time and continues to evolve – an excellent
+                            solution for our talented design team, who continue to push the boundaries.”</h3>
+                        <div class="squarebird pb-2 pt-3">
+                            <img src="./img/squarebird-logo.webp" alt="">
+                            <h5>Squarebird</h5>
+                        </div>
+                        <a href="https://www.squarebird.co.uk/">https://www.squarebird.co.uk/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently Asked Questions -->
+    <section id="faq">
+        <div class="container-fluid pb-5 mt-5">
+            <div class="faq_heading pb-5">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="faq_section">
+                <button type="button" class="collapsible">What Is Included With My Purchase Of Avada?</button>
+                <div class="content">
+                    <p><i class="fa-solid fa-check"></i> With your purchase of Avada, you will receive:</p>
+                    <p><i class="fa-solid fa-check"></i> 6 months of free professional support.</p>
+                    <p><i class="fa-solid fa-check"></i> 8 bundled premium plugins.</p>
+                    <p><i class="fa-solid fa-check"></i> 102 prebuilt websites, with new sites released regularly.</p>
+                    <p><i class="fa-solid fa-check"></i> 522 prebuilt content items for every occassion, downloadable
+                        with just a click.</p>
+                    <p><i class="fa-solid fa-check"></i> 120+ Design and Layout Elements.</p>
+                    <p><i class="fa-solid fa-check"></i> 550+ detailed help files, continually updated to ensure
+                        everything is current.</p>
+                    <p><i class="fa-solid fa-check"></i> 200+ video tutorials, with new videos, added regularly.</p>
+                </div>
+
+                <button type="button" class="collapsible">Are There Any Recurring Fees?</button>
+                <div class="content">
+                    <p>No, there are no recurring license fees to use Avada. It is a one-time purchase that provides you
+                        with lifetime updates at no extra cost and is valid for life. You can choose to purchase a
+                        support extension after the initial 6 months of support has expired. However, this is entirely
+                        optional.</p>
+                </div>
+                <button type="button" class="collapsible">Where Can I Get Support?</button>
+                <div class="content">
+                    <p>Hands-on support with our professional team of support experts is accessible 24/7, and that
+                        includes an extensive library of detailed documentation and video tutorials.</p>
+                    <p><i class="fa-solid fa-chevron-right"></i> To access support you will need to register a support
+                        account by following these steps.</p>
+                    <p><i class="fa-solid fa-chevron-right"></i> Once your support account is set up, you can submit
+                        support tickets here.</p>
+                    <p><i class="fa-solid fa-chevron-right"></i> Learn how to navigate your support account Dashboard
+                        here.</p>
+                    <p><i class="fa-solid fa-chevron-right"></i> Check to see if you are eligible for Grandfathered
+                        support.</p>
+                    <p><i class="fa-solid fa-chevron-right"></i> For a detailed overview of our support policy please go
+                        here.</p>
+                </div>
+                <button type="button" class="collapsible">Are The Prebuilt Websites Fully Customizable?</button>
+                <div class="content">
+                    <p>Yes, each prebuilt website is 100% customizable. All prebuilt websites are professionally
+                        designed by our in-house design team, created to showcase Avada’s capabilities and save you
+                        time.</p>
+                    <p>Once you import a prebuilt website, you can entirely customize the content and layouts to your
+                        liking. You can add your own imagery, change text, change colors or completely change any of the
+                        layouts using the Avada Website Builder.</p>
+                </div>
+                <button type="button" class="collapsible">Why Should I Trust Avada?</button>
+                <div class="content">
+                    <p>Trust is a quality that we take great care to foster and maintain by building long-term
+                        professional relationships that our customers can rely on. Here are some important qualifiers:
+                    </p>
+
+                    <p><i class="fa-solid fa-check"></i> The #1 selling Website Builder on Themeforest for 11+ years and
+                        counting.</p>
+                    <p><i class="fa-solid fa-check"></i> We love what we do and who we do it for. Your future is our
+                        focus.</p>
+                    <p><i class="fa-solid fa-check"></i> Avada is 100% developed and maintained in-house.</p>
+                    <p><i class="fa-solid fa-check"></i> Free, consistent, and stable updates to ensure compatibility
+                        with industry standards & trends.</p>
+                    <p><i class="fa-solid fa-check"></i> Avada has no dependence on 3rd parties to deliver a stable &
+                        seamless website building experience.</p>
+                    <p><i class="fa-solid fa-check"></i> 550+ detailed help files, continually updated to ensure
+                        everything is current.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Build Successful Websites With Avada -->
+    <section id="successful_website">
+        <div class="container-fluid pb-5 mt-5">
+            <div class="row g-4">
+                <div class="col-xl-6 col-md-6">
+                    <div class="successful_left">
+                        <div class="successful_content">
+                            <h1>Build Successful Websites With Avada</h1>
+                            <p>Whether you are a beginner, marketer, or professional, Avada has the tools & resources
+                                you can rely on to succeed.</p>
+                            <button type="button" class="btn footer_up_btn">Buy Avada For $69</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                     <div class="successful_right">
+                        <div class="successful_img">
+                            <img src="./img/fu1.webp" alt="" class="img-fluid">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer_section">
+        <div class="container-fluid pb-5">
+            <div class="row footer_border pb-3 pt-5 g-4">
+                <div class="col-xl-3 col-md-4">
+                    <div class="avada_footer">
+                        <div class="avada_footer_logo">
+                            <img src="./img/avada-logo-light-svg.svg" alt="" width="130">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4">
+                    <div class="help_center">
+                        <a href="">Help Center</a>
+                        <a href="">Avada Studio</a>
+                        <a href="">Prebuilt Websites</a>
+                        <a href="">Reviews</a>
+                        <a href="">Submit A Ticket</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4">
+                    <div class="about_us">
+                        <a href="">About Us</a>
+                        <a href="">Careers</a>
+                        <a href="">Support Policy</a>
+                        <a href="">Terms And Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-12">
+                    <div class="subscribe_area">
+                        <form action="action_page.php">
+                            <div class="subscribe_box">
+                              <p>Sign up to our newsletter and get all of the latest news and updates.</p>
+                            </div>                   
+                            <div class="subscribe_box" style="background-color:white">
+                              <input type="text" placeholder="Email address" name="mail" required>
+                              <input type="submit" value="Subscribe">
+                            </div>  
+                          </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 g-4">
+                <div class="col-xl-8 col-md-12">
+                    <div class="copyright">
+                        <p>© Copyright 2012 - 2024 | Avada Website Builder by Zahid Khan | All rights reserved | Powered by WordPress</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12">
+                    <div class="footer_socialbar">
+                        <div class="social_box">
+                            <div class="facebook-f">
+                                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                             </div>
+                             <div class="twitter-f">
+                               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                             </div>
+                             <div class="instagram-f">
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                             </div>
+                             <div class="tiktok-f">
+                                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery main start   -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- js main start bootstrap  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- other plugin js -->
+    <script src="./jquery/owl.carousel.min.js"></script>
+    <script src="./js/jsplugin.js"></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./aos/aos.js"></script>
+
+    <!-- js main start   -->
+    <script src="./js/main.js"></script>
+  
+
+</body>
+
+</html>
